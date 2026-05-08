@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "src": "https://picsum.photos/seed/dental1/800/600",
+      "alt": "Clinic Reception"
+    },
+    {
+      "src": "https://picsum.photos/seed/dental2/800/600",
+      "alt": "Treatment Room"
+    },
+    {
+      "src": "https://picsum.photos/seed/dental3/800/600",
+      "alt": "Dental Equipment"
+    },
+    {
+      "src": "https://picsum.photos/seed/dental4/800/600",
+      "alt": "Waiting Area"
+    },
+    {
+      "src": "https://picsum.photos/seed/dental5/800/600",
+      "alt": "Sterilization Room"
+    },
+    {
+      "src": "https://picsum.photos/seed/dental6/800/600",
+      "alt": "Doctor Consultation"
+    }
+  ]
+}
