@@ -1,0 +1,110 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # ──────────────────────────────────────────────
+  # SERVICES
+  # ──────────────────────────────────────────────
+  - name: "services"
+    label: "Services"
+    files:
+      - name: "services_list"
+        label: "All Services"
+        file: "data/services.json"
+        fields:
+          - label: "Services"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title",       name: "title",       widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image URL",   name: "image",       widget: "image" }
+              - { label: "Keyword (for booking)", name: "keyword", widget: "string" }
+
+  # ──────────────────────────────────────────────
+  # GALLERY IMAGES
+  # ──────────────────────────────────────────────
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - name: "gallery_images"
+        label: "Clinic Images"
+        file: "data/gallery.json"
+        fields:
+          - label: "Images"
+            name: "images"
+            widget: "list"
+            fields:
+              - { label: "Image",   name: "src",     widget: "image" }
+              - { label: "Alt Text / Caption", name: "alt", widget: "string" }
+
+  # ──────────────────────────────────────────────
+  # TEAM
+  # ──────────────────────────────────────────────
+  - name: "team"
+    label: "Our Team"
+    files:
+      - name: "team_members"
+        label: "Team Members"
+        file: "data/team.json"
+        fields:
+          - label: "Members"
+            name: "members"
+            widget: "list"
+            fields:
+              - { label: "Name",        name: "name",        widget: "string" }
+              - { label: "Role / Title", name: "role",       widget: "string" }
+              - { label: "Photo",        name: "photo",      widget: "image" }
+              - { label: "Bio (optional)", name: "bio",      widget: "text",    required: false }
+
+  # ──────────────────────────────────────────────
+  # TESTIMONIALS
+  # ──────────────────────────────────────────────
+  - name: "testimonials"
+    label: "Testimonials"
+    files:
+      - name: "testimonials_list"
+        label: "Patient Reviews"
+        file: "data/testimonials.json"
+        fields:
+          - label: "Reviews"
+            name: "reviews"
+            widget: "list"
+            fields:
+              - { label: "Patient Name", name: "name",       widget: "string" }
+              - { label: "Designation",  name: "designation",widget: "string" }
+              - { label: "Review Text",  name: "text",       widget: "text" }
+              - { label: "Rating (1-5)", name: "rating",     widget: "number", min: 1, max: 5 }
+              - { label: "Photo",        name: "photo",      widget: "image",  required: false }
+
+  # ──────────────────────────────────────────────
+  # CLINIC SETTINGS (contact, hours, hero stats)
+  # ──────────────────────────────────────────────
+  - name: "settings"
+    label: "Clinic Settings"
+    files:
+      - name: "site_settings"
+        label: "Contact & Info"
+        file: "data/settings.json"
+        fields:
+          - { label: "Clinic Name",    name: "clinic_name",  widget: "string" }
+          - { label: "Tagline",        name: "tagline",      widget: "string" }
+          - { label: "Address",        name: "address",      widget: "string" }
+          - { label: "Phone 1",        name: "phone1",       widget: "string" }
+          - { label: "Phone 2",        name: "phone2",       widget: "string", required: false }
+          - { label: "Email",          name: "email",        widget: "string" }
+          - { label: "WhatsApp Number (with country code)", name: "whatsapp", widget: "string" }
+          - { label: "Opening Hours",  name: "hours",        widget: "string" }
+          - { label: "Saturday Hours", name: "sat_hours",    widget: "string" }
+          - label: "Hero Stats"
+            name: "hero_stats"
+            widget: "object"
+            fields:
+              - { label: "Happy Patients", name: "patients",    widget: "number" }
+              - { label: "Years Experience", name: "experience", widget: "number" }
+              - { label: "Expert Dentists",  name: "dentists",   widget: "number" }
+              - { label: "Awards Won",       name: "awards",     widget: "number" }
