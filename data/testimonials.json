@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "name": "Saraswati Adhikari",
+      "designation": "Teacher, Kathmandu",
+      "text": "Best dental experience! Dr. Priya and her team were incredibly gentle. My root canal was completely pain-free. Highly recommend!",
+      "rating": 5,
+      "photo": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+    },
+    {
+      "name": "Ramesh Karki",
+      "designation": "Business Owner",
+      "text": "I was always scared of dentists until I visited Smile Garden. Staff made me so comfortable. Got my braces here and results are amazing!",
+      "rating": 5,
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+    },
+    {
+      "name": "Anita Gurung",
+      "designation": "Homemaker",
+      "text": "Took my 5-year-old for first dental checkup. The pediatric dentist was so patient. My daughter looks forward to visits now!",
+      "rating": 4,
+      "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+    }
+  ]
+}
