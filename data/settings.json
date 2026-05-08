@@ -1,0 +1,17 @@
+{
+  "clinic_name": "Smile Garden Dental Clinic",
+  "tagline": "Your Smile is Our Passion",
+  "address": "Old Baneshwor, Kathmandu, Nepal 44600",
+  "phone1": "+977 1-4481234",
+  "phone2": "+977 9801234567",
+  "email": "info@smilegarden.com.np",
+  "whatsapp": "9779801234567",
+  "hours": "Sunday - Friday: 9:00 AM - 7:00 PM",
+  "sat_hours": "Saturday: 10:00 AM - 4:00 PM",
+  "hero_stats": {
+    "patients": 5000,
+    "experience": 15,
+    "dentists": 8,
+    "awards": 25
+  }
+}
