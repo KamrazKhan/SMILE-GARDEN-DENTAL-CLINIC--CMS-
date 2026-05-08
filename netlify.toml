@@ -1,0 +1,10 @@
+# netlify.toml — place in your project ROOT (same folder as index.html)
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"

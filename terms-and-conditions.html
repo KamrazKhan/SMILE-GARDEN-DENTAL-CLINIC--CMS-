@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions — Smile Garden Dental Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal: #1a7f7a;
+    --teal-light: #e8f5f5;
+    --teal-mid: #2a9d97;
+    --gold: #c8963a;
+    --dark: #1a2332;
+    --gray: #5a6a7a;
+    --light: #f8fafb;
+    --white: #ffffff;
+    --border: #dde8ea;
+    --warn: #fff8e6;
+    --warn-border: #f0b429;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.8;
+  }
+
+  header {
+    background: var(--dark);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+  }
+  .header-inner {
+    max-width: 900px;
+    margin: auto;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-area { display: flex; align-items: center; gap: 12px; }
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: var(--teal);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  .logo-text { color: white; }
+  .logo-text strong { font-family: 'Playfair Display', serif; font-size: 1.1rem; display: block; }
+  .logo-text span { font-size: 0.72rem; opacity: 0.7; letter-spacing: 2px; text-transform: uppercase; }
+  .back-btn {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s;
+  }
+  .back-btn:hover { color: white; }
+
+  .hero {
+    background: linear-gradient(135deg, var(--dark) 0%, #2d3f55 100%);
+    color: white;
+    padding: 60px 24px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 400px; height: 400px;
+    background: rgba(26,127,122,0.1);
+    border-radius: 50%;
+    top: -150px; right: -100px;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(200,150,58,0.2);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 12px;
+  }
+  .hero p { font-size: 1rem; opacity: 0.75; max-width: 500px; margin: auto; }
+  .hero-meta {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 0.82rem;
+    opacity: 0.7;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: -30px auto 60px;
+    padding: 0 24px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .notice-card {
+    background: var(--warn);
+    border: 1px solid var(--warn-border);
+    border-left: 4px solid var(--warn-border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .notice-card .icon { font-size: 1.4rem; flex-shrink: 0; }
+  .notice-card p { color: #7a5c00; font-size: 0.92rem; margin: 0; }
+  .notice-card strong { color: #5a4200; }
+
+  .toc-card {
+    background: white;
+    border-radius: 16px;
+    padding: 28px 32px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+    border-left: 4px solid var(--teal);
+  }
+  .toc-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark);
+    margin-bottom: 14px;
+  }
+  .toc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+  .toc-grid a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.87rem;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: color 0.2s;
+  }
+  .toc-grid a:hover { color: var(--teal); }
+  .toc-grid a::before { content: '§'; color: var(--teal); font-weight: 700; font-size: 0.8rem; }
+
+  .section-card {
+    background: white;
+    border-radius: 16px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+  }
+  .section-card:hover { box-shadow: 0 8px 40px rgba(0,0,0,0.09); }
+
+  .sec-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--teal-light);
+  }
+  .sec-num {
+    background: var(--dark);
+    color: white;
+    width: 34px; height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .sec-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--dark);
+  }
+
+  p { color: var(--gray); margin-bottom: 12px; font-size: 0.95rem; }
+  p:last-child { margin-bottom: 0; }
+
+  .rule-list { list-style: none; margin: 12px 0; }
+  .rule-list li {
+    display: flex;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--gray);
+    font-size: 0.93rem;
+    align-items: flex-start;
+  }
+  .rule-list li:last-child { border: none; }
+  .rule-list li .bullet {
+    background: var(--teal);
+    color: white;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .do-dont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+  .do-box, .dont-box {
+    border-radius: 10px;
+    padding: 16px;
+  }
+  .do-box {
+    background: #f0faf0;
+    border: 1px solid #86d996;
+  }
+  .dont-box {
+    background: #fff5f5;
+    border: 1px solid #f5b8b8;
+  }
+  .do-box h4 { color: #2d7a3d; margin-bottom: 8px; font-size: 0.88rem; }
+  .dont-box h4 { color: #a53030; margin-bottom: 8px; font-size: 0.88rem; }
+  .do-box li, .dont-box li {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    padding-left: 4px;
+  }
+  .do-box ul, .dont-box ul { padding-left: 16px; color: var(--gray); }
+
+  .highlight-box {
+    background: var(--teal-light);
+    border-left: 4px solid var(--teal);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 14px 0;
+    color: var(--teal);
+    font-size: 0.92rem;
+  }
+
+  .warn-box {
+    background: var(--warn);
+    border-left: 4px solid var(--warn-border);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 14px 0;
+    color: #7a5000;
+    font-size: 0.92rem;
+  }
+
+  .contact-final {
+    background: linear-gradient(135deg, var(--dark), #2d3f55);
+    color: white;
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .contact-final h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  .contact-final p { color: rgba(255,255,255,0.75); margin-bottom: 24px; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+  }
+  .contact-item {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 14px;
+    color: white;
+  }
+  .contact-item .lbl { font-size: 0.73rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+  .contact-item .val { font-size: 0.9rem; }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--gray);
+    font-size: 0.82rem;
+    border-top: 1px solid var(--border);
+  }
+  footer a { color: var(--teal); text-decoration: none; }
+
+  @media (max-width: 600px) {
+    .section-card { padding: 24px 20px; }
+    .toc-grid { grid-template-columns: 1fr; }
+    .do-dont { grid-template-columns: 1fr; }
+    .hero { padding: 40px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-area">
+     <div class="flex items-center space-x-2 sm:space-x-3"><img src="smile-grden-dental-clinic-fb.jpg" alt="Logo" class="h-8 sm:h-9 w-auto rounded-md bg-white"></div>
+      <div class="logo-text">
+        <strong>Smile Garden</strong>
+        <span>Dental Clinic</span>
+      </div>
+    </div>
+    <a href="index.html" class="back-btn">← Back to Website</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-badge">Legal Document</div>
+  <h1>Terms & Conditions</h1>
+  <p>Please read these terms carefully before using our website or booking an appointment.</p>
+  <div class="hero-meta">
+    <span>📅 Effective: January 1, 2025</span>
+    <span>📍 Old Baneshwor, Kathmandu</span>
+    <span>🇳🇵 Governed by Nepal Law</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Important Notice -->
+  <div class="notice-card">
+    <div class="icon">⚠️</div>
+    <p><strong>Important:</strong> By accessing this website or booking an appointment, you agree to be bound by these Terms & Conditions. If you do not agree, please do not use our services. These terms apply to all visitors, patients, and users of Smile Garden Dental Clinic's website.</p>
+  </div>
+
+  <!-- Table of Contents -->
+  <div class="toc-card">
+    <h3>Table of Contents</h3>
+    <div class="toc-grid">
+      <a href="#acceptance">Acceptance of Terms</a>
+      <a href="#services">Our Services</a>
+      <a href="#appointments">Appointment Policy</a>
+      <a href="#cancellation">Cancellation Policy</a>
+      <a href="#payment">Payment Terms</a>
+      <a href="#medical">Medical Disclaimer</a>
+      <a href="#liability">Limitation of Liability</a>
+      <a href="#website">Website Use</a>
+      <a href="#ip">Intellectual Property</a>
+      <a href="#governing">Governing Law</a>
+    </div>
+  </div>
+
+  <!-- 1. Acceptance -->
+  <div class="section-card" id="acceptance">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <h2>Acceptance of Terms</h2>
+    </div>
+    <p>These Terms & Conditions ("Terms") constitute a legally binding agreement between you ("Patient" or "User") and Smile Garden Dental Clinic ("Clinic," "we," "us," or "our"), located at Old Baneshwor, Kathmandu, Nepal.</p>
+    <p>By using our website, booking an appointment online, or visiting our clinic, you acknowledge that you have read, understood, and agreed to these Terms. We reserve the right to modify these Terms at any time, and your continued use of our services constitutes acceptance of any changes.</p>
+  </div>
+
+  <!-- 2. Services -->
+  <div class="section-card" id="services">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <h2>Our Services</h2>
+    </div>
+    <p>Smile Garden Dental Clinic provides the following dental services:</p>
+    <ul class="rule-list">
+      <li><span class="bullet">✓</span>General dentistry (checkups, cleanings, fillings)</li>
+      <li><span class="bullet">✓</span>Root canal treatment and endodontic procedures</li>
+      <li><span class="bullet">✓</span>Cosmetic dentistry (teeth whitening, veneers)</li>
+      <li><span class="bullet">✓</span>Dental implants and prosthetics</li>
+      <li><span class="bullet">✓</span>Orthodontics (braces and clear aligners)</li>
+      <li><span class="bullet">✓</span>Pediatric dentistry for children</li>
+      <li><span class="bullet">✓</span>Oral surgery and extractions</li>
+    </ul>
+    <div class="highlight-box">
+      All treatments are performed by licensed dental professionals registered with the Nepal Medical Council.
+    </div>
+  </div>
+
+  <!-- 3. Appointments -->
+  <div class="section-card" id="appointments">
+    <div class="sec-header">
+      <div class="sec-num">3</div>
+      <h2>Appointment Policy</h2>
+    </div>
+    <p>When booking an appointment through our website:</p>
+    <ul class="rule-list">
+      <li><span class="bullet">→</span>Online booking is a <strong>request</strong>, not a confirmed appointment until the clinic confirms via phone/SMS</li>
+      <li><span class="bullet">→</span>You will receive a unique Appointment ID — keep it safe to check your status</li>
+      <li><span class="bullet">→</span>Please arrive <strong>10 minutes early</strong> for your scheduled appointment</li>
+      <li><span class="bullet">→</span>Bring a valid ID (citizenship, passport, or driving license)</li>
+      <li><span class="bullet">→</span>Inform us of any allergies, medical conditions, or current medications</li>
+      <li><span class="bullet">→</span>For children under 16, a parent or guardian must accompany the patient</li>
+    </ul>
+
+    <div class="do-dont" style="margin-top:16px;">
+      <div class="do-box">
+        <h4>✅ Please Do</h4>
+        <ul>
+          <li>Arrive on time</li>
+          <li>Inform us of allergies</li>
+          <li>Bring your Appointment ID</li>
+          <li>Follow post-treatment instructions</li>
+        </ul>
+      </div>
+      <div class="dont-box">
+        <h4>❌ Please Don't</h4>
+        <ul>
+          <li>Book multiple slots for same visit</li>
+          <li>No-show without cancelling</li>
+          <li>Provide false information</li>
+          <li>Ignore prescribed medications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Cancellation -->
+  <div class="section-card" id="cancellation">
+    <div class="sec-header">
+      <div class="sec-num">4</div>
+      <h2>Cancellation & Rescheduling Policy</h2>
+    </div>
+    <ul class="rule-list">
+      <li><span class="bullet">✓</span>Cancellations made <strong>24+ hours before</strong> appointment: Full refund (if advance payment made)</li>
+      <li><span class="bullet">✓</span>Cancellations made <strong>less than 24 hours</strong> before: 50% cancellation fee may apply</li>
+      <li><span class="bullet">✓</span><strong>No-show</strong> without cancellation: Appointment slot forfeited, no refund</li>
+      <li><span class="bullet">✓</span>Rescheduling is allowed up to <strong>2 times</strong> per appointment</li>
+      <li><span class="bullet">✓</span>Emergency cancellations will be reviewed on a case-by-case basis</li>
+    </ul>
+    <p style="margin-top:14px;">To cancel or reschedule, call us at <strong>+977 980-1234567</strong> or WhatsApp us at least 24 hours in advance.</p>
+    <div class="warn-box">
+      ⚠️ Repeated no-shows (3 or more) may result in restricted online booking access.
+    </div>
+  </div>
+
+  <!-- 5. Payment -->
+  <div class="section-card" id="payment">
+    <div class="sec-header">
+      <div class="sec-num">5</div>
+      <h2>Payment Terms</h2>
+    </div>
+    <ul class="rule-list">
+      <li><span class="bullet">₨</span>Payment is due at the time of service unless prior arrangement is made</li>
+      <li><span class="bullet">₨</span>We accept: Cash (NPR), eSewa, Khalti, bank transfer, and major cards</li>
+      <li><span class="bullet">₨</span>Festival/promotional discounts apply only for the specified offer period</li>
+      <li><span class="bullet">₨</span>Insurance claims: patients are responsible for verifying their own coverage</li>
+      <li><span class="bullet">₨</span>Treatment cost estimates provided before major procedures begin</li>
+    </ul>
+    <div class="highlight-box">
+      All prices are in Nepalese Rupees (NPR) and inclusive of applicable taxes.
+    </div>
+  </div>
+
+  <!-- 6. Medical Disclaimer -->
+  <div class="section-card" id="medical">
+    <div class="sec-header">
+      <div class="sec-num">6</div>
+      <h2>Medical Disclaimer</h2>
+    </div>
+    <p>Information on this website is for <strong>general educational purposes only</strong> and does not constitute professional medical advice, diagnosis, or treatment.</p>
+    <ul class="rule-list">
+      <li><span class="bullet">!</span>Always seek advice from a qualified dentist for specific dental concerns</li>
+      <li><span class="bullet">!</span>Do not disregard professional dental advice based on website content</li>
+      <li><span class="bullet">!</span>Treatment outcomes may vary from patient to patient</li>
+      <li><span class="bullet">!</span>Before/after results shown (if any) are individual cases and not a guarantee of outcome</li>
+    </ul>
+    <div class="warn-box">
+      ⚠️ In case of dental emergency, please call us immediately or visit the nearest hospital. Do not rely solely on online booking for emergencies.
+    </div>
+  </div>
+
+  <!-- 7. Liability -->
+  <div class="section-card" id="liability">
+    <div class="sec-header">
+      <div class="sec-num">7</div>
+      <h2>Limitation of Liability</h2>
+    </div>
+    <p>To the fullest extent permitted by Nepal law, Smile Garden Dental Clinic shall not be liable for:</p>
+    <ul class="rule-list">
+      <li><span class="bullet">×</span>Any indirect, incidental, or consequential damages arising from use of our website</li>
+      <li><span class="bullet">×</span>Technical errors, downtime, or data loss on our website</li>
+      <li><span class="bullet">×</span>Adverse reactions resulting from undisclosed allergies or medical conditions</li>
+      <li><span class="bullet">×</span>Delays in appointment confirmation due to high volume</li>
+      <li><span class="bullet">×</span>Third-party website content linked from our website</li>
+    </ul>
+    <p style="margin-top:12px;">Our total liability for any claim arising out of use of our services shall not exceed the amount paid by you for the specific service in question.</p>
+  </div>
+
+  <!-- 8. Website Use -->
+  <div class="section-card" id="website">
+    <div class="sec-header">
+      <div class="sec-num">8</div>
+      <h2>Website Use Rules</h2>
+    </div>
+    <p>When using our website, you agree to:</p>
+    <ul class="rule-list">
+      <li><span class="bullet">✓</span>Provide accurate and truthful information when booking appointments</li>
+      <li><span class="bullet">✓</span>Not attempt to hack, disrupt, or misuse our website or database</li>
+      <li><span class="bullet">✓</span>Not impersonate another person or book appointments fraudulently</li>
+      <li><span class="bullet">✓</span>Not scrape, copy, or reproduce website content without permission</li>
+      <li><span class="bullet">✓</span>Not use the site for any unlawful purpose under Nepal law</li>
+    </ul>
+  </div>
+
+  <!-- 9. IP -->
+  <div class="section-card" id="ip">
+    <div class="sec-header">
+      <div class="sec-num">9</div>
+      <h2>Intellectual Property</h2>
+    </div>
+    <p>All content on this website — including the Smile Garden logo, design, text, images, and appointment system — is the property of Smile Garden Dental Clinic.</p>
+    <ul class="rule-list">
+      <li><span class="bullet">©</span>You may not reproduce, distribute, or use our content without written permission</li>
+      <li><span class="bullet">©</span>You may share links to our website on social media</li>
+      <li><span class="bullet">©</span>Patient testimonials are published with patient consent</li>
+    </ul>
+  </div>
+
+  <!-- 10. Governing Law -->
+  <div class="section-card" id="governing">
+    <div class="sec-header">
+      <div class="sec-num">10</div>
+      <h2>Governing Law & Disputes</h2>
+    </div>
+    <p>These Terms are governed by and construed in accordance with the laws of <strong>Nepal</strong>, including but not limited to:</p>
+    <ul class="rule-list">
+      <li><span class="bullet">§</span>Electronic Transaction Act, 2063 (Nepal)</li>
+      <li><span class="bullet">§</span>Consumer Protection Act, 2075 (Nepal)</li>
+      <li><span class="bullet">§</span>Privacy and Personal Information Protection applicable regulations</li>
+    </ul>
+    <p style="margin-top:12px;">Any disputes arising from these Terms shall first be attempted to be resolved amicably. If unresolved, disputes shall be subject to the jurisdiction of courts in <strong>Kathmandu District, Nepal</strong>.</p>
+    <div class="highlight-box">
+      For complaints or disputes, first contact us at info@smilegardendental.com. We aim to resolve all concerns within 7 working days.
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact-final">
+    <h2>Questions About These Terms?</h2>
+    <p>Contact our clinic directly — we're happy to clarify anything.</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="lbl">📍 Address</div>
+        <div class="val">Old Baneshwor, Kathmandu, Nepal 44600</div>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">📞 Phone</div>
+        <div class="val">+977 980-1234567</div>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">📧 Email</div>
+        <div class="val">info@smilegardendental.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="lbl">📋 Policy</div>
+        <div class="val"><a href="privacy-policy.html" style="color:#7dd3fc;">Privacy Policy →</a></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 Smile Garden Dental Clinic. All rights reserved. |
+  <a href="index.html">Home</a> ·
+  <a href="privacy-policy.html">Privacy Policy</a> ·
+  Old Baneshwor, Kathmandu, Nepal
+</footer>
+
+</body>
+</html>
