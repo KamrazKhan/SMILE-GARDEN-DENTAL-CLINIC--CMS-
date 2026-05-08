@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "title": "General Dentistry",
+      "description": "Complete oral exams and preventive care for all ages.",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80",
+      "keyword": "General Dentistry"
+    },
+    {
+      "title": "Root Canal",
+      "description": "Advanced therapy to save and restore infected teeth safely.",
+      "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Root Canal Treatment"
+    },
+    {
+      "title": "Cosmetic Care",
+      "description": "Veneers and smile makeovers for a perfect aesthetic.",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Cosmetic Dentistry"
+    },
+    {
+      "title": "Dental Implants",
+      "description": "Permanent tooth replacement with natural-looking results.",
+      "image": "https://images.unsplash.com/photo-1598256989800-fea5f619b164?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Dental Implants"
+    },
+    {
+      "title": "Orthodontics",
+      "description": "Braces and clear aligners for all ages.",
+      "image": "https://images.unsplash.com/photo-1606265752439-1ebe4a9bc4a5?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Orthodontics/Braces"
+    },
+    {
+      "title": "Pediatric Care",
+      "description": "Gentle dental care for your little ones.",
+      "image": "https://images.unsplash.com/photo-1555026938-164b5247c1a2?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Pediatric Dentistry"
+    },
+    {
+      "title": "Oral Surgery",
+      "description": "Safe extractions and specialized surgical care.",
+      "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Oral Surgery"
+    },
+    {
+      "title": "Teeth Whitening",
+      "description": "Professional brightening for a radiant smile.",
+      "image": "https://images.unsplash.com/photo-1445527815219-ecbfec67492e?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Teeth Whitening"
+    },
+    {
+      "title": "Gum Treatment",
+      "description": "Specialized periodontal therapy.",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Gum Treatment"
+    },
+    {
+      "title": "Veneers",
+      "description": "Porcelain shells for a perfect smile.",
+      "image": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Dental Veneers"
+    },
+    {
+      "title": "Emergency Care",
+      "description": "Immediate assistance for dental pain.",
+      "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Emergency"
+    },
+    {
+      "title": "Dentures",
+      "description": "High-quality removable replacements.",
+      "image": "https://images.unsplash.com/photo-1593059025398-0f5ce75059d6?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Dentures"
+    },
+    {
+      "title": "Wisdom Removal",
+      "description": "Painless extraction of wisdom teeth.",
+      "image": "https://images.unsplash.com/photo-1598256989590-75485e74483c?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Wisdom Removal"
+    },
+    {
+      "title": "Digital X-Rays",
+      "description": "High-precision diagnostics.",
+      "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=600&q=80",
+      "keyword": "X-Rays"
+    },
+    {
+      "title": "Night Guards",
+      "description": "Protection against teeth grinding.",
+      "image": "https://images.unsplash.com/photo-1533228891704-9492bd85659e?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Night Guards"
+    },
+    {
+      "title": "Deep Cleaning",
+      "description": "Professional scaling and polishing.",
+      "image": "https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80",
+      "keyword": "Deep Cleaning"
+    }
+  ]
+}
